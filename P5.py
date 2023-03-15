@@ -1,51 +1,28 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Apr 18 12:39:49 2021
+Created on Fri Apr 30 14:39:12 2021
 
 @author: USER
 """
 
-import numpy as np #導入numpy
-x=int(input('輸入任意0~9數字')) 
-y=int(input('輸入任意一個數字'))
-if x==0: #條件判斷
-    k=np.array([[x,x,x,x],[x,' ',' ',x],[x,' ',' ',x],[x,' ',' ',x],[x,x,x,x]]) #建立矩陣
-    i=k.repeat([y,y,y,y],axis=1) #axis=1的值進行重複
-    j=i.repeat([y,y,y,y,y],axis=0)#axis=0的值進行重複
-elif x==1:
-    a=np.array([[' ',' ',x,' '],[x,x,x,' '],[' ',' ',x,' '],[' ',' ',x,' '],[x,x,x,x]])
-    i=a.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-elif x==2:
-    b=np.array([[x,x,x,x],[' ',' ',' ',x],[x,x,x,x],[x,' ',' ',' '],[x,x,x,x]])
-    i=b.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-elif x==3:
-    c=np.array([[x,x,x,x],[' ',' ',' ',x],[' ',x,x,x],[' ',' ',' ',x],[x,x,x,x]])
-    i=c.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-elif x==4:
-    d=np.array([[x,' ',x,' '],[x,' ',x,' '],[x,x,x,x],[' ',' ',x,' '],[' ',' ',x,' ']])
-    i=d.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-elif x==5:
-    e=np.array([[x,x,x,x],[x,' ',' ',' '],[x,x,x,x],[' ',' ',' ',x],[x,x,x,x]])
-    i=e.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-elif x==6:
-    f=np.array([[x,x,x,x],[x,' ',' ',' '],[x,x,x,x],[x,' ',' ',x],[x,x,x,x]])
-    i=f.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-elif x==7:
-    g=np.array([[x,x,x,x],[' ',' ',' ',x],[' ',' ',' ',x],[' ',' ',' ',x],[' ',' ',' ',x]])
-    i=g.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-elif x==8:
-    h=np.array([[x,x,x,x],[x,' ',' ',x],[x,x,x,x],[x,' ',' ',x],[x,x,x,x]])
-    i=h.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-else:
-    h=np.array([[x,x,x,x],[x,' ',' ',x],[x,x,x,x],[' ',' ',' ',x],[x,x,x,x]])
-    i=h.repeat([y,y,y,y],axis=1)
-    j=i.repeat([y,y,y,y,y],axis=0)
-print(j.reshape(5*y,4*y)) #顯示5y x 4y的矩陣 
+Math= {'Peter',' Norton',' Kevin',' Mary',' John',' Ford',' Nelson',' Damon',' Ivan','Tom'}#建立集合
+Computer={'Curry',' James',' Mary',' Turisa',' Tracy', 'Judy',' Lee', 'Jarmul', 'Damon','Ivan' }
+Physics={ 'Eric',' Lee',' Kevin',' Mary', 'Christy',' Josh',' Nelson',' Kazil',' Linda', 'Tom'}
+
+
+
+print('同時參加3個夏令營的名單:')
+
+print(Math & Computer & Physics)#顯示三個交集
+
+print('同時參加Math與Computer夏令營的名單:')
+
+print(Math & Computer)#顯示math跟computer交集
+
+print('同時參加Math與Physics夏令營的名單:')
+
+print(Math & Physics)#顯示math跟physics交集
+
+print('同時參加Physics與Computer夏令營的名單')
+
+print(Computer & Physics)#顯示computer跟physics交集
