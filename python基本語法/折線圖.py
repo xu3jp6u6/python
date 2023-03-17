@@ -18,3 +18,4 @@ plt.plot(seq,BMW,label='BMW')
 plt.plot(seq,Lexus,label='Lexus')
 plt.legend(loc='best')
 plt.show()
+#2018~2022汽車銷量折線圖
