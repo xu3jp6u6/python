@@ -9,15 +9,15 @@ Created on Wed Oct  7 15:51:53 2020
 list=[]
 for i in range(10):
     list.append(eval(input()))
-a=(list[5]+list[4])/2
+a=(list[5]+list[4])/2 #中位數
 print('中位數:',a)
-b=(list[0]+list[1]+list[2]+list[3]+list[4]+list[5]+list[6]+list[7]+list[8]+list[9])/10
+b=(list[0]+list[1]+list[2]+list[3]+list[4]+list[5]+list[6]+list[7]+list[8]+list[9])/10 #平均數
 print('平均數:',b)
 maxc=0
-for i in range(10):
-      if list.count(list[i])>maxc:
+for i in range(10): 
+      if list.count(list[i])>maxc: #求出現最多次的數字
         maxc=list.count(list[i])
-        n=list[i]
+        n=list[i] 
 print('眾數:',n)
 
         
