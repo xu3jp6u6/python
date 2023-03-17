@@ -16,17 +16,17 @@ B = np.array([1,4,2,5,3,6])
 
 d = B.reshape(3,2)
 
-f=c+d
+f=c+d #相加
 
-g=c-d
+g=c-d #相減
 
-h=c*d
+h=c*d #相乘
 
-i=c/d
+i=c/d #相除
 
-j=c.T
+j=c.T #轉置
 
-k=d.T
+k=d.T #轉置
 
 print(c)
 print()
