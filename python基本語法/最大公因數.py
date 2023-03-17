@@ -15,9 +15,9 @@ def f(a,b,c):
     elif b<a and b<c:
         d=b
     else:
-        d=c
+        d=c #求最小值
     for i in range (1,d+1):
         if ((a%i==0)and(b%i==0)and(c%i==0)):
-            f=i
-    return f
+            f=i #三個數皆要能整除
+    return f 
 print('最大公因數',f(a,b,c))    
