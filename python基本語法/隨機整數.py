@@ -15,7 +15,7 @@ def main(n):
             print()
             
         print(a,end=" ")
-      #求0~100隨機可以被10整除的數  
+        
 n=int(input('請輸入一個整數:'))
 main(n)
 

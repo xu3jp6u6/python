@@ -9,7 +9,7 @@ import math
 a=int(input('輸入三個整數:'))
 b=int(input('輸入三個整數:'))
 c=int(input('輸入三個整數:'))
-def compute(): #實數公式解
+def compute():
     f=b**2-4*a*c
     if f>0:
         x1=(-b+math.sqrt(f))/2*a

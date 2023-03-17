@@ -70,16 +70,17 @@ nine= (" ** ",
        "   *",
        " ** ")
 digits=(zero,one,two,three,four,five,six,seven,eight,nine) 
- #ASCII藝術字
+ 
 def show_number(nums):
     i=0
     while i<FONTROW:
         col=0
         while col<len(nums): 
-            print(digits[int(nums[col])][i],end=" ")#顯示ASCII藝術字中的每個字符
+            print(digits[int(nums[col])][i],end=" ")
             col+=1
         print("")
         i+=1
+ 
 def show_usage():
     
     show_number('2987340')
