@@ -13,7 +13,7 @@ x=np.linspace(left, right,40)
 f1 = 3 * np.sin(x)
 f2 = np.sin(x)
 f3 = 0.2 * np.sin(x)
-#設定sin值
+
 plt.plot(x,f1,'-o')
 plt.plot(x,f2,'-x')
 plt.plot(x,f3,color='red')
