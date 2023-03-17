@@ -9,24 +9,24 @@ import numpy as np
 
 A = np.array([2,2,2,2,2,2])
 
-c = A.reshape(3,2) #3x2矩陣
+c = A.reshape(3,2)
 
 
 B = np.array([1,4,2,5,3,6])
 
-d = B.reshape(3,2) #3x2矩陣
+d = B.reshape(3,2)
 
-f=c+d #相加
+f=c+d
 
-g=c-d #相減
+g=c-d
 
-h=c*d #相乘
+h=c*d
 
-i=c/d #相除
+i=c/d
 
-j=c.T #轉置
+j=c.T
 
-k=d.T #轉置
+k=d.T
 
 print(c)
 print()
