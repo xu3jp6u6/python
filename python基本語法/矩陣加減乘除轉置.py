@@ -9,12 +9,12 @@ import numpy as np
 
 A = np.array([2,2,2,2,2,2])
 
-c = A.reshape(3,2)
+c = A.reshape(3,2) #3x2矩陣
 
 
 B = np.array([1,4,2,5,3,6])
 
-d = B.reshape(3,2)
+d = B.reshape(3,2) #3x2矩陣
 
 f=c+d #相加
 
