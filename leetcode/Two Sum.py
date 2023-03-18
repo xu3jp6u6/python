@@ -7,8 +7,10 @@ Created on Sat Mar 18 10:17:39 2023
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i in range(len(nums)):
-            a=nums[i]
-            for j in range(i+1,len(nums)):
-                if target-nums[j]==a:
-                    return(i,j)
+        records = dict()
+
+        for index, value in enumerate(nums):  
+            if target - value in records:  
+                return [records[target- value], index]
+            records[value] = index    
+        return []
