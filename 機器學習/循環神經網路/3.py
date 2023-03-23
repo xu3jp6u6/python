@@ -6,7 +6,7 @@ Created on Mon Jan 11 08:39:16 2021
 """
 
 from keras.datasets import imdb
-from keras.preprocessing import sequence
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 from keras.models import Sequential
 from keras.layers import Embedding
 from keras.layers import GRU
@@ -14,8 +14,8 @@ from keras.layers import Dense,Dropout
 top_words = 1000
 (X_train, Y_train), (X_test, Y_test) =imdb.load_data(num_words=top_words)
 max_words = 100
-X_train = sequence.pad_sequences(X_train,maxlen=max_words)
-X_test = sequence.pad_sequences(X_test, maxlen=max_words)
+X_train = pad_sequences(X_train,maxlen=max_words)
+X_test = pad_sequences(X_test, maxlen=max_words)
 model = Sequential()
 model.add(Embedding(top_words, 32,input_length=max_words))
 model.add(Dropout(0.25))
